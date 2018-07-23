@@ -1,0 +1,17 @@
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Model.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Model.pdb
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\obj\Debug\Model.dll
+c:\users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\obj\Debug\Model.pdb
+C:\Users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\WebDriver.dll
+C:\Users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\WebDriver.Support.dll
+C:\Users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\WebDriver.xml
+C:\Users\vnd-pcalvo\Source\Repos\AutomationFrameworkTemplate\Model\bin\Debug\WebDriver.Support.xml
