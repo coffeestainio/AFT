@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using Pages.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,23 @@ namespace AutomationFrameworkTemplate
 
     public class SuperBaseClass
     {
+        public LoginPage _loginPage;
+
         private IWebDriver _driver;
         private DataHelper _dataHelper;
         private SeleniumHelper _seleniumHelper;
+
+        public LoginPage LoginPage
+        {
+            get
+            {
+                if (_loginPage == null)
+                    _loginPage = new LoginPage(WebDriver, SeleniumHelper);
+                return _loginPage;
+            }
+            set => _loginPage = new LoginPage(WebDriver, SeleniumHelper);
+        }
+
         public IWebDriver WebDriver
         {
             get

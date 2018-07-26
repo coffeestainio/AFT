@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Model;
+using OpenQA.Selenium;
 using Utilities.Helpers;
 
 namespace AutomationFrameworkTemplate
@@ -8,11 +10,29 @@ namespace AutomationFrameworkTemplate
     [TestClass]
     public class UnitTest1 : TestBaseClass
     {
+
+      
         [TestMethod]
-        public void TestMethod1()
+        public void UnSuccesfulLogin()
         {
-            WebDriver.Navigate().GoToUrl("http://www.google.com");
-            
+            var testUser = new User("marquito", "juanito");
+
+            LoginPage.LoginUser(testUser);
+
+            Assert.IsTrue(LoginPage.WasLoginSuccessful());
         }
+
+        [TestMethod]
+        [Ignore]
+        public void SuccessfulLogin()
+        {
+
+            var testUser = new User("username", "password");
+
+            LoginPage.LoginUser(testUser);       
+
+            Assert.IsTrue(SeleniumHelper.IsContentonPage("Hola pablo!"));
+        }
+
     }
 }
