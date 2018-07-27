@@ -16,7 +16,7 @@ namespace AutomationFrameworkTemplate
         [TestInitialize]
         public void Setup()
         {
-            WebDriver = new FirefoxDriver();
+            WebDriver = new ChromeDriver();
             WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             WebDriver.Navigate().GoToUrl("http://testingcr-demo.glitch.me/");
         }

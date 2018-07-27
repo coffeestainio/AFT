@@ -14,9 +14,11 @@ namespace Pages.Pages
         IWebDriver _webDriver;
         SeleniumHelper _seleniumHelper;
 
-        By _txtUsername = By.Id("inputUsername");
-        By _txtPassword = By.Id("inputPassword");
-        By _btnIngresar = By.Id("buttonIngresar");
+        private By _txtUsername = By.Id("inputUsername");
+        private By _txtPassword = By.Id("inputPassword");
+        private By _btnIngresar = By.Id("buttonIngresar");
+        private By _btnRegistrarse = By.XPath("//a[contains(.,'Registrarse')]");
+
 
 
         public LoginPage(IWebDriver webDriver, SeleniumHelper seleniumHelper)
@@ -25,7 +27,7 @@ namespace Pages.Pages
             _seleniumHelper = seleniumHelper;
         }
 
-        public void LoginUser(User user)
+        public void LoginUser(Usuario user)
         {
             IWebElement txtUsername = _webDriver.FindElement(_txtUsername);
             txtUsername.SendKeys(user.username);
@@ -40,6 +42,11 @@ namespace Pages.Pages
         public bool WasLoginSuccessful()
         {
             return _seleniumHelper.IsContentonPage("Error: Usuario y contraseña no coinciden");
+        }
+
+        public void ClickRegistrarse()
+        {
+            _webDriver.FindElement(_btnRegistrarse).Click();
         }
 
     }

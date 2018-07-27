@@ -11,11 +11,12 @@ namespace AutomationFrameworkTemplate
     public class UnitTest1 : TestBaseClass
     {
 
+
       
         [TestMethod]
         public void UnSuccesfulLogin()
         {
-            var testUser = new User("marquito", "juanito");
+            var testUser = new Usuario("marquito", "juanito", "", "");
 
             LoginPage.LoginUser(testUser);
 
@@ -23,15 +24,29 @@ namespace AutomationFrameworkTemplate
         }
 
         [TestMethod]
-        [Ignore]
         public void SuccessfulLogin()
         {
+            
+            var testUser = new Usuario("username", "password", "pablo", "calvo");
+            //var testUser = DataHelper.NewUser();
 
-            var testUser = new User("username", "password");
+            LoginPage.ClickRegistrarse();
+            RegisterPage.RegistrarUsuario(testUser);
+            Thread.Sleep(2000);
+            LoginPage.LoginUser(testUser);
 
-            LoginPage.LoginUser(testUser);       
+            Assert.IsTrue(HomePage.IsDisplayed());
+            Assert.IsTrue(HomePage.IsUserSIgnedIn(testUser));
+        }
 
-            Assert.IsTrue(SeleniumHelper.IsContentonPage("Hola pablo!"));
+        [TestMethod]
+        public void JavaScriptTest()
+        {
+
+            SeleniumHelper.executeJavaScriptToHideElement();
+
+            LoginPage.ClickRegistrarse();
+      
         }
 
     }
